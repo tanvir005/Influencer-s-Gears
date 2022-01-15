@@ -317,11 +317,15 @@ label #cancle{
     .main-section{
         width: 100%;
     }
+    .heading{
+        margin-bottom: 20px;
+    }
     .main-title{
         position:absolute;
         font-size: 24px;
         text-align: center;
         font-size: medium;
+        font-weight: 700;
         
     }
     label #btn{
@@ -339,7 +343,7 @@ label #cancle{
         border-radius: 1px;
         }
     .ul{
-        display: flex;
+        
         flex-direction: column;
         position: absolute;
         padding-bottom: 10px;
@@ -349,7 +353,7 @@ label #cancle{
         height: 40vh;
         background: rgb(247, 235, 247);
         top: 140px;
-        right: -100%;
+        left: -100%;
         margin: 10px 0px 0px 0;
         text-align: left;
         transition: all .5s;
@@ -364,27 +368,21 @@ label #cancle{
         display: block;
     }
 
-    .ul .cart{
-        font-size: 30px;
-        position:absolute;
-        left: 380px;
-        top:1px;
-        display: block;
-    }
+    
 
 
     /* --------- Frist Section-------
     ------------------------------ */
 
     body {
-        width: 90%;
+        width: 100%;
         margin: 10px 10px 0px 10px; 
     }
     .frist-article{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: -10px 50px 0px 0px;
+        margin: 70px 50px 0px 0px;
         align-items: center;
     }
     .bg-img-circl{
@@ -529,6 +527,26 @@ label #cancle{
     }
 
 
+
+
+}
+
+
+
+/* Tablet Devices */
+
+@media only screen and (min-width:689px) and 
+(max-width:992px){
+    .main-section{
+        width:100%;
+    }
+     .product-collection{
+        display: grid;
+        margin-left: 3px;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    
+}
 
 
 }
