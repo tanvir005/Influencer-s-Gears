@@ -361,7 +361,9 @@ label #cancle{
     display: none;
     }
 
-/* Mobile Devices */
+/* ------------------------
+         Mobile Devices 
+----------------------------*/
 @media only screen and (max-width:688px){
     .main-section{
         width: 100%;
@@ -421,9 +423,9 @@ label #cancle{
     }
 
     .heading .nav-bar .cart{
-        position: absolute;
+        position: relative;
         right: 15px;
-        top: 45px;
+        top: -15px;
         font-size: 35px;
     }
     
@@ -615,20 +617,229 @@ label #cancle{
 
 
 
-/* Tablet Devices */
+/* ---------------------------
+         Tablet Devices 
+-------------------------------*/
 
 @media only screen and (min-width:689px) and 
 (max-width:992px){
-    .main-section{
-        width:100%;
+        .main-section{
+        width: 100%;
     }
-     .product-collection{
+    .heading{
+        margin-bottom: 20px;
+    }
+    .heading .main-title{
+        position: relative;
+        right: 80px;
+        top: -30px;
+        font-weight: 700px; 
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;       
+    }
+    
+    
+    .ul li,a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+        border-radius: 1px;
+        position: relative;
+        right: 110px;
+        top: -10px;
+        }
+        .heading .nav-bar .cart{
+        position: absolute;
+        right: 155px;
+        top: 53px;
+        font-size: 20px;
+    }
+    
+
+
+    /* --------- Frist Section-------
+    ------------------------------ */
+
+    
+    .frist-article{
+        position: relative;
+        top: 50px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bg-img-circl{
+        position: absolute;
+        left: 100px;
+        width: 202px;
+        height: 190px;
+        
+    }
+    .details-text{
+        position: relative;
+        top: 300px;
+    }
+    .main-img{
+       
+        width: 192px;
+        height: 180px;
+       
+    }
+    .frist-article :nth-child(1) { order: 2; }
+    .frist-article :nth-child(2) { order: 1; }
+    .details-text{
+        width: 100%;
+    }
+    h1{
+        font-size: 28px;
+        width: 700;
+        text-align: center;
+}
+    p{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: justify;
+        font-feature-settings: 'liga' off;
+        width: 340px;
+        color: #3A3A3A; 
+    }
+    .frist-button{
+       margin-left: 90px;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 10px;
+        position: relative;
+        top: 280px;
+        right: 50px;
+        border: 0 solid white;
+       
+    }
+    .a-logos{
+        justify-content: center;
+        width: 25px;
+        height: 10px; 
+        margin: 20px;
+        padding: 20px;
+        
+    }
+
+
+
+
+    /* <!---------------------Collections of gears SECTION-------------------> */
+      
+    .product-collection{
         display: grid;
         margin-left: 3px;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         justify-items: center;
+        
+    }
+    .product-collections{
+        position: relative;
+        top: 250px;
+    }
+    .product-collections a{
+        padding-top: 10px;
+        position: relative;
+        left: 140px;
+        top: 10px;
+    }
+
+    /* last sections  */
+    .last-bonus{
+        height: 600px;
+        display: flex;
+        flex-direction: column; 
+        position: relative;
+        top: 100px;      
+    }
+    .last-bonus :nth-child(1) { order: 2; }
+    .last-bonus :nth-child(2) { order: 1; }
+        
+    .h1-lb{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 36px;
+        text-align: center;
+        
+        color: #0A0826;
+    }
+    .last-bonus .l-img-details{
+        width: 311px;
+        height: 72px; 
+        margin: 0px  10px 0 10px;
+    }
+    .l-img img{
+        position: relative;
+        top: 110px;
+    }
+
+    .footer{
+        position: relative;
+        left: -50px;
+        width: 150%;
+        height: 239px;
+        background: #0A0826;     
+    }
+    .footer-container{
+        position: relative;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    } 
+    .footer-heading{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        font-feature-settings: 'liga' off;
+        color: #FFFFFF;
     
-}
+    }
+    .footerP{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 24px;
+        font-feature-settings: 'liga' off;
+        color: #D9DBE1;
+        text-align: center;
+    
+    }
+    .a-footer-{
+        font-size: 1.5em;
+        color: whitesmoke; 
+    }
+
+    .a-footer-:hover{
+        font-size: 2.5em;
+        overflow: hidden; 
+    }
+        .product-collection{
+            display: grid;
+            margin-left: 3px;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+        }
 
 
 }
