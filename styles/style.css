@@ -47,7 +47,15 @@ body{
     margin-left: 20px;
        
 }
+.heading .nav-bar .cart{
+    position: absolute;
+    right: 45px;
+    top: 65px;
+}
 .ul a:hover{
+    border-bottom: 2px solid black ;
+}
+.cart:hover{
     border-bottom: 2px solid black ;
 }
 
@@ -57,11 +65,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 100px;
     
 }
-.details-text{
-    width: 100%;
-}
+
 .frist-button{
     width: 196px;
     height: 44px;
@@ -362,14 +369,17 @@ label #cancle{
     .heading{
         margin-bottom: 20px;
     }
-    .main-title{
-        position:absolute;
-        font-size: 24px;
-        text-align: center;
-        font-size: medium;
-        font-weight: 900;
-        
+    .heading .main-title{
+        position: relative;
+        right: 80px;
+        top: -30px;
+        font-weight: 700px; 
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;       
     }
+    
     label #btn{
         display: block;
         position:absolute;
@@ -410,14 +420,13 @@ label #cancle{
         display: block;
     }
 
-    .cart{
-       
-        width: 50px;
-        height: 50px;
-        position:absolute;
-        left: 300px;
-        top: 905px;
+    .heading .nav-bar .cart{
+        position: absolute;
+        right: 15px;
+        top: 45px;
+        font-size: 35px;
     }
+    
 
 
     /* --------- Frist Section-------
@@ -429,6 +438,9 @@ label #cancle{
         margin-left: 50px;
     }
     .frist-article{
+        position: relative;
+        top: 50px;
+        left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -436,14 +448,20 @@ label #cancle{
         align-items: center;
     }
     .bg-img-circl{
+        position: absolute;
+        left: 100px;
         width: 202px;
         height: 190px;
-        margin-right: 190px;
+        
+    }
+    .details-text{
+        position: relative;
+        top: 300px;
     }
     .main-img{
+       
         width: 192px;
         height: 180px;
-        padding-bottom: 10px;
        
     }
     .frist-article :nth-child(1) { order: 2; }
@@ -458,16 +476,14 @@ label #cancle{
 }
     p{
         font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: justify;
-    font-feature-settings: 'liga' off;
-    width: 340px;
-
-    color: #3A3A3A; 
-
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: justify;
+        font-feature-settings: 'liga' off;
+        width: 340px;
+        color: #3A3A3A; 
     }
     .frist-button{
        margin-left: 90px;
@@ -475,6 +491,11 @@ label #cancle{
     .logos{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 10px;
+        position: relative;
+        top: 280px;
+        right: 50px;
+        border: 0 solid white;
        
     }
     .a-logos{
@@ -496,15 +517,26 @@ label #cancle{
         margin-left: 3px;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
-    
-}
+        
+    }
+    .product-collections{
+        position: relative;
+        top: 250px;
+    }
+    .product-collections a{
+        padding-top: 10px;
+        position: relative;
+        left: 140px;
+        top: 10px;
+    }
 
     /* last sections  */
     .last-bonus{
         height: 600px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;        
+        flex-direction: column; 
+        position: relative;
+        top: 100px;      
     }
     .last-bonus :nth-child(1) { order: 2; }
     .last-bonus :nth-child(2) { order: 1; }
@@ -513,7 +545,7 @@ label #cancle{
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 36px;
         text-align: center;
         
@@ -525,26 +557,25 @@ label #cancle{
         margin: 0px  10px 0 10px;
     }
     .l-img img{
-    margin: 150px 0px 50px 50px;
+        position: relative;
+        top: 110px;
     }
-    .second{
-        justify-content: center;
-    }
+
     .footer{
-        bottom: 0;
-        left: 0px;
-        right: 0px;
-        width: 120%;
+        position: relative;
+        left: -50px;
+        width: 150%;
         height: 239px;
-        background: #0A0826;
-        text-align: center;
-        margin: 0;
+        background: #0A0826;     
     }
     .footer-container{
+        position: relative;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: 0;
-        
-    
     } 
     .footer-heading{
         font-family: Poppins;
@@ -554,8 +585,6 @@ label #cancle{
         line-height: 24px;
         font-feature-settings: 'liga' off;
         color: #FFFFFF;
-        text-align: center;
-        margin-right: 60px;
     
     }
     .footerP{
@@ -564,16 +593,13 @@ label #cancle{
         font-weight: bold;
         font-size: 12px;
         line-height: 24px;
-        text-align: center;
         font-feature-settings: 'liga' off;
-        padding-left: 30px;
         color: #D9DBE1;
+        text-align: center;
     
     }
     .a-footer-{
         font-size: 1.5em;
-        text-align: center;
-        justify-content: center;
         color: whitesmoke; 
     }
 
